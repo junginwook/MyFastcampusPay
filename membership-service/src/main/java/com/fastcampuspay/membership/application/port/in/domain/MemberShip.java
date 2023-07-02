@@ -1,4 +1,4 @@
-package com.fastcampuspay.membership.domain;
+package com.fastcampuspay.membership.application.port.in.domain;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
