@@ -1,21 +1,23 @@
 package com.fastcampuspay.membership.application.service;
 
+import com.fashcampuspay.common.UseCase;
 import com.fastcampuspay.membership.adapter.out.persistence.MemberShipJpaEntity;
 import com.fastcampuspay.membership.adapter.out.persistence.MemberShipMapper;
 import com.fastcampuspay.membership.application.port.in.RegisterMembershipCommand;
 import com.fastcampuspay.membership.application.port.in.RegisterMembershipUseCase;
 import com.fastcampuspay.membership.application.port.out.RegisterMembershipPort;
-import com.fastcampuspay.membership.application.port.in.domain.MemberShip;
-import com.fastcampuspay.membership.application.port.in.domain.MemberShip.MemberShipAddress;
-import com.fastcampuspay.membership.application.port.in.domain.MemberShip.MemberShipEmail;
-import com.fastcampuspay.membership.application.port.in.domain.MemberShip.MemberShipIsCorp;
-import com.fastcampuspay.membership.application.port.in.domain.MemberShip.MemberShipIsValid;
-import com.fastcampuspay.membership.application.port.in.domain.MemberShip.MemberShipName;
+import com.fastcampuspay.membership.domain.MemberShip;
+import com.fastcampuspay.membership.domain.MemberShip.MemberShipAddress;
+import com.fastcampuspay.membership.domain.MemberShip.MemberShipEmail;
+import com.fastcampuspay.membership.domain.MemberShip.MemberShipIsCorp;
+import com.fastcampuspay.membership.domain.MemberShip.MemberShipIsValid;
+import com.fastcampuspay.membership.domain.MemberShip.MemberShipName;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-@Service
+@UseCase
 @RequiredArgsConstructor
+@Transactional
 public class RegisterMemberShipService implements RegisterMembershipUseCase {
 
 	private final RegisterMembershipPort registerMembershipPort;
