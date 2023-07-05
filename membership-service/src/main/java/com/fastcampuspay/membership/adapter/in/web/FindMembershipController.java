@@ -1,9 +1,10 @@
 package com.fastcampuspay.membership.adapter.in.web;
 
+import com.fashcampuspay.common.WebAdapter;
 import com.fastcampuspay.membership.application.port.in.FindMembershipCommand;
 import com.fastcampuspay.membership.application.port.in.FindMembershipUseCase;
-import com.fastcampuspay.membership.application.port.in.domain.MemberShip;
-import common.WebAdapter;
+import com.fastcampuspay.membership.domain.MemberShip;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

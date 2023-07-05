@@ -1,25 +1,22 @@
 package com.fastcampuspay.membership.adapter.in.web;
 
-import com.fastcampuspay.membership.application.port.in.domain.MemberShip;
-import com.fastcampuspay.membership.application.port.in.domain.MemberShip.MemberShipAddress;
-import com.fastcampuspay.membership.application.port.in.domain.MemberShip.MemberShipEmail;
-import com.fastcampuspay.membership.application.port.in.domain.MemberShip.MemberShipId;
-import com.fastcampuspay.membership.application.port.in.domain.MemberShip.MemberShipIsCorp;
-import com.fastcampuspay.membership.application.port.in.domain.MemberShip.MemberShipIsValid;
-import com.fastcampuspay.membership.application.port.in.domain.MemberShip.MemberShipName;
+import com.fastcampuspay.membership.domain.MemberShip;
+import com.fastcampuspay.membership.domain.MemberShip.MemberShipAddress;
+import com.fastcampuspay.membership.domain.MemberShip.MemberShipEmail;
+import com.fastcampuspay.membership.domain.MemberShip.MemberShipId;
+import com.fastcampuspay.membership.domain.MemberShip.MemberShipIsCorp;
+import com.fastcampuspay.membership.domain.MemberShip.MemberShipIsValid;
+import com.fastcampuspay.membership.domain.MemberShip.MemberShipName;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-@RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
 class RegisterMemberShipControllerTest {
