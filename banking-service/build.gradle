@@ -5,7 +5,7 @@ plugins {
 bootJar.enabled = true
 jar.enabled = false
 
-group = 'com.fastcampus.banking'
+group = 'com.fastcampuspay.banking'
 version = '1.0.2'
 
 ext{
@@ -16,7 +16,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-//    implementation 'org.jetbrains:annotations:23.0.0'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
     implementation 'com.mysql:mysql-connector-j'
 }
 
@@ -28,7 +28,7 @@ bootJar {
 }
 
 docker {
-    println(tasks.bootJar.outputs.files)
+    println("file name: " + tasks.bootJar.outputs.files.singleFile.name)
     name rootProject.name + '-' + project.name + ":" + version
     dockerfile file("../Dockerfile")
     files tasks.bootJar.outputs.files

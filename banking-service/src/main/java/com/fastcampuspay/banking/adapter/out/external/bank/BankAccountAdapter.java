@@ -1,16 +1,8 @@
 package com.fastcampuspay.banking.adapter.out.external.bank;
 
 import com.fashcampuspay.common.ExternalSystemAdapter;
-import com.fastcampuspay.banking.adapter.out.persistence.FirmBankingRequestJpaEntity;
 import com.fastcampuspay.banking.application.port.out.RequestBankAccountInfoPort;
 import com.fastcampuspay.banking.application.port.out.RequestExternalFirmBankingPort;
-import com.fastcampuspay.banking.application.port.out.RequestFirmBankingPort;
-import com.fastcampuspay.banking.domain.FirmBankingRequest.FirmBankingStatus;
-import com.fastcampuspay.banking.domain.FirmBankingRequest.FromBankAccountNumber;
-import com.fastcampuspay.banking.domain.FirmBankingRequest.FromBankName;
-import com.fastcampuspay.banking.domain.FirmBankingRequest.MoneyAmount;
-import com.fastcampuspay.banking.domain.FirmBankingRequest.ToBankAccountNumber;
-import com.fastcampuspay.banking.domain.FirmBankingRequest.ToBankName;
 import lombok.RequiredArgsConstructor;
 
 @ExternalSystemAdapter

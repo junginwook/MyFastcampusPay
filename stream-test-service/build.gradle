@@ -1,0 +1,29 @@
+plugins {
+    id 'com.palantir.docker' version '0.25.0'
+}
+
+bootJar.enabled = true
+jar.enabled = false
+
+group = 'com.fastcampuspay.stream-test-service'
+version = '1.0.0'
+
+dependencies {
+    implementation 'org.springframework.cloud:spring-cloud-starter-stream-kafka:4.0.4'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+}
+
+bootJar {
+    launchScript()
+    manifest {
+        attributes 'Start-Class': 'com.fastcampuspay.streamtest.StreamTestApplication'
+    }
+}
+
+docker {
+    println(tasks.bootJar.outputs.files)
+    name rootProject.name + '-' + project.name + ":" + version
+    dockerfile file("../Dockerfile")
+    files tasks.bootJar.outputs.files
+    buildArgs(['JAR_FILE': tasks.bootJar.outputs.files.singleFile.name])
+}
