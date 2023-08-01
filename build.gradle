@@ -19,7 +19,6 @@ buildscript {
 }
 
 allprojects {
-    apply plugin: 'java'
     apply plugin: 'java-library'
 }
 
@@ -56,6 +55,18 @@ project(':banking-service') {
 }
 
 project(':membership-service') {
+    dependencies {
+        implementation project(path: ':common', configuration: 'default')
+    }
+}
+
+project('stream-test-service') {
+    dependencies {
+        implementation project(path: ':common', configuration: 'default')
+    }
+}
+
+project(':money-service') {
     dependencies {
         implementation project(path: ':common', configuration: 'default')
     }
