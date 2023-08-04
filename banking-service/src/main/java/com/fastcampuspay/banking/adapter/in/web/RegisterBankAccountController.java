@@ -1,6 +1,6 @@
 package com.fastcampuspay.banking.adapter.in.web;
 
-import com.fashcampuspay.common.WebAdapter;
+import com.fastcampuspay.common.WebAdapter;
 import com.fastcampuspay.banking.application.port.in.RegisterBankAccountUseCase;
 import com.fastcampuspay.banking.application.port.in.RegisteredBanAccountCommand;
 import com.fastcampuspay.banking.domain.RegisteredBankAccount;

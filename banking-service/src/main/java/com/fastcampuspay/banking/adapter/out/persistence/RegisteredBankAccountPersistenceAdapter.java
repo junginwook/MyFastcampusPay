@@ -1,6 +1,6 @@
 package com.fastcampuspay.banking.adapter.out.persistence;
 
-import com.fashcampuspay.common.PersistenceAdapter;
+import com.fastcampuspay.common.PersistenceAdapter;
 import com.fastcampuspay.banking.application.port.out.RegisterBankAccountPort;
 import com.fastcampuspay.banking.domain.RegisteredBankAccount.BankAccountNumber;
 import com.fastcampuspay.banking.domain.RegisteredBankAccount.BankName;

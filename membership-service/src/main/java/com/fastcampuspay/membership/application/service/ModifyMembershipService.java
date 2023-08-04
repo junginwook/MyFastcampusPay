@@ -1,6 +1,6 @@
 package com.fastcampuspay.membership.application.service;
 
-import com.fashcampuspay.common.UseCase;
+import com.fastcampuspay.common.UseCase;
 import com.fastcampuspay.membership.adapter.out.persistence.MemberShipJpaEntity;
 import com.fastcampuspay.membership.adapter.out.persistence.MemberShipMapper;
 import com.fastcampuspay.membership.application.port.in.ModifyMembershipCommand;

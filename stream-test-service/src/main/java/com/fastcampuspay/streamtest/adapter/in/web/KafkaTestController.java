@@ -1,21 +1,21 @@
 package com.fastcampuspay.streamtest.adapter.in.web;
 
-import com.fashcampuspay.common.WebAdapter;
+import com.fastcampuspay.common.WebAdapter;
 import com.fastcampuspay.streamtest.application.port.in.KafkaTestUseCase;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Tag;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @WebAdapter
+@RestController
 @RequestMapping("/test")
-@RequiredArgsConstructor
 @Tag(value = "kafka stream test")
+@RequiredArgsConstructor
 public class KafkaTestController {
 	private final KafkaTestUseCase registerKafkaUseCase;
 

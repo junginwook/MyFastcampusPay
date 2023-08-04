@@ -1,9 +1,8 @@
 package com.fastcampuspay.money.adapter.out.persistence;
 
-import com.fashcampuspay.common.PersistenceAdapter;
+import com.fastcampuspay.common.PersistenceAdapter;
 import com.fastcampuspay.money.application.port.out.IncreaseMoneyPort;
 import com.fastcampuspay.money.domain.MemberMoney.MembershipId;
-import com.fastcampuspay.money.domain.MemberMoney.MoneyBalance;
 import com.fastcampuspay.money.domain.MoneyChangingRequest.ChangingMoneyAmount;
 import com.fastcampuspay.money.domain.MoneyChangingRequest.MoneyChangingStatus;
 import com.fastcampuspay.money.domain.MoneyChangingRequest.MoneyChangingType;

@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/membership-service" />
             <option value="$PROJECT_DIR$/money-service" />
             <option value="$PROJECT_DIR$/stream-test-service" />
+            <option value="$PROJECT_DIR$/task-consumer" />
             <option value="$PROJECT_DIR$/untitled" />
           </set>
         </option>
