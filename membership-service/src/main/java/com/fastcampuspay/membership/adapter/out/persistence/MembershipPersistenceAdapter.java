@@ -1,6 +1,6 @@
 package com.fastcampuspay.membership.adapter.out.persistence;
 
-import com.fashcampuspay.common.PersistenceAdapter;
+import com.fastcampuspay.common.PersistenceAdapter;
 import com.fastcampuspay.membership.application.port.out.FindMembershipPort;
 import com.fastcampuspay.membership.application.port.out.ModifyMembershipPort;
 import com.fastcampuspay.membership.application.port.out.RegisterMembershipPort;

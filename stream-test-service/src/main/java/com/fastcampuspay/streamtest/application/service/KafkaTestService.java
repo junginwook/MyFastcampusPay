@@ -1,6 +1,6 @@
 package com.fastcampuspay.streamtest.application.service;
 
-import com.fashcampuspay.common.UseCase;
+import com.fastcampuspay.common.UseCase;
 import com.fastcampuspay.streamtest.application.port.in.KafkaTestUseCase;
 import com.fastcampuspay.streamtest.application.port.out.KafkaTestPort;
 import com.fastcampuspay.streamtest.adapter.out.external.TestMessage;

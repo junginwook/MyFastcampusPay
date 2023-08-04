@@ -76,6 +76,8 @@ services:
       - SPRING_DATASOURCE_PASSWORD=mysqlpw
       - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.MySQL8Dialect
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - KAFKA_CLUSTERS_BOOTSTRAPSERVERS=kafka:9092
+      - LOGGING_TOPIC=fastcampus.logging.out.stdout
 
   banking-service:
     image: my-fastcampus-pay-banking-service:1.0.2
@@ -91,6 +93,9 @@ services:
       - SPRING_DATASOURCE_PASSWORD=mysqlpw
       - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.MySQL8Dialect
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - KAFKA_CLUSTERS_BOOTSTRAPSERVERS=kafka:9092
+      - LOGGING_TOPIC=fastcampus.logging.out.stdout
+      - SERVICE_MEMBERSHIP_URL=http://membership:8080
 
   money-service:
     image: my-fastcampus-pay-money-service:1.0.1
@@ -106,6 +111,9 @@ services:
       - SPRING_DATASOURCE_PASSWORD=mysqlpw
       - SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT=org.hibernate.dialect.MySQL8Dialect
       - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - KAFKA_CLUSTERS_BOOTSTRAPSERVERS=kafka:9092
+      - LOGGING_TOPIC=fastcampus.logging.out.stdout
+      - TASK_TOPIC=fastcampus.task.topic
 
   stream-test-service:
     image: my-fastcampus-pay-stream-test-service:1.0.0

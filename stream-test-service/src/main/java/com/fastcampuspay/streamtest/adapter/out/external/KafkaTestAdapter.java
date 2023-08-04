@@ -1,6 +1,6 @@
 package com.fastcampuspay.streamtest.adapter.out.external;
 
-import com.fashcampuspay.common.ExternalSystemAdapter;
+import com.fastcampuspay.common.ExternalSystemAdapter;
 import com.fastcampuspay.streamtest.application.port.out.KafkaTestPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cloud.stream.function.StreamBridge;

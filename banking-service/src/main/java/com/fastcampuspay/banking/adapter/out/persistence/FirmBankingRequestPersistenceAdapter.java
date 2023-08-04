@@ -1,9 +1,6 @@
 package com.fastcampuspay.banking.adapter.out.persistence;
 
-import com.fashcampuspay.common.ExternalSystemAdapter;
-import com.fastcampuspay.banking.adapter.out.external.bank.BankAccount;
-import com.fastcampuspay.banking.adapter.out.external.bank.GetBankAccountRequest;
-import com.fastcampuspay.banking.application.port.out.RequestBankAccountInfoPort;
+import com.fastcampuspay.common.ExternalSystemAdapter;
 import com.fastcampuspay.banking.application.port.out.RequestFirmBankingPort;
 import com.fastcampuspay.banking.domain.FirmBankingRequest.FirmBankingStatus;
 import com.fastcampuspay.banking.domain.FirmBankingRequest.FromBankAccountNumber;

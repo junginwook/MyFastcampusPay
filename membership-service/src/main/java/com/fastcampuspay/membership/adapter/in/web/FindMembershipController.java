@@ -1,6 +1,6 @@
 package com.fastcampuspay.membership.adapter.in.web;
 
-import com.fashcampuspay.common.WebAdapter;
+import com.fastcampuspay.common.WebAdapter;
 import com.fastcampuspay.membership.application.port.in.FindMembershipCommand;
 import com.fastcampuspay.membership.application.port.in.FindMembershipUseCase;
 import com.fastcampuspay.membership.domain.MemberShip;

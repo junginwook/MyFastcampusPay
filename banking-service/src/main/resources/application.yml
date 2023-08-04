@@ -20,3 +20,8 @@ spring:
         format_sql: true
     hibernate:
       ddl-auto: create
+
+
+#service:
+#  membership:
+#    url: membership:8080

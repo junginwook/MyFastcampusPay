@@ -1,6 +1,6 @@
 package com.fastcampuspay.banking.application.service;
 
-import com.fashcampuspay.common.UseCase;
+import com.fastcampuspay.common.UseCase;
 import com.fastcampuspay.banking.adapter.out.external.bank.ExternalFirmBankingRequest;
 import com.fastcampuspay.banking.adapter.out.external.bank.FirmBankingResult;
 import com.fastcampuspay.banking.adapter.out.persistence.FirmBankingRequestJpaEntity;

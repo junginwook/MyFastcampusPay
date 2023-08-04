@@ -5,4 +5,5 @@ include 'banking-service'
 include 'money-service'
 include 'stream-test-service'
 include 'untitled'
+include 'task-consumer'
 

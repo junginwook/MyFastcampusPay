@@ -1,6 +1,8 @@
 package com.fastcampuspay.banking.application.service;
 
-import com.fashcampuspay.common.UseCase;
+import com.fastcampuspay.banking.adapter.out.service.MembershipStatus;
+import com.fastcampuspay.banking.application.port.out.GetMembershipPort;
+import com.fastcampuspay.common.UseCase;
 import com.fastcampuspay.banking.adapter.out.external.bank.BankAccount;
 import com.fastcampuspay.banking.adapter.out.external.bank.GetBankAccountRequest;
 import com.fastcampuspay.banking.adapter.out.persistence.RegisteredBankAccountJpaEntity;
@@ -22,6 +24,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class RegisterBankAccountService implements RegisterBankAccountUseCase {
 
+	private final GetMembershipPort getMembershipPort;
 	private final RegisterBankAccountPort registerBankAccountPort;
 	private final RegisteredBankAccountMapper mapper;
 	private final RequestBankAccountInfoPort requestBankAccountInfoPort;
@@ -30,6 +33,11 @@ public class RegisterBankAccountService implements RegisterBankAccountUseCase {
 
 		// 은행 계좌를 등록해야 하는 서비스
 		//1. 등록된 계좌인지 확인한다.
+		MembershipStatus membershipStatus = getMembershipPort.getMembership(command.getMembershipId());
+		if(!membershipStatus.isValid()) {
+			return null;
+		}
+
 		//외부의 은행에 이 계좌 정상인가?
 		//biz Logic -> external system
 		//port -> adapter -> external system

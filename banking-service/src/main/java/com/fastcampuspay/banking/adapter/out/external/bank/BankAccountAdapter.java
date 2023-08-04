@@ -1,6 +1,6 @@
 package com.fastcampuspay.banking.adapter.out.external.bank;
 
-import com.fashcampuspay.common.ExternalSystemAdapter;
+import com.fastcampuspay.common.ExternalSystemAdapter;
 import com.fastcampuspay.banking.application.port.out.RequestBankAccountInfoPort;
 import com.fastcampuspay.banking.application.port.out.RequestExternalFirmBankingPort;
 import lombok.RequiredArgsConstructor;
